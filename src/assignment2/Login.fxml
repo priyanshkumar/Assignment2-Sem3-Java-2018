@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #e0e9ec;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Log In">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="48.0" />
+               </font></Label>
+            <GridPane maxWidth="330.0" prefHeight="86.0" prefWidth="336.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.20001220703125" minWidth="10.0" prefWidth="109.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="356.79998779296875" minWidth="10.0" prefWidth="221.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="119.0" text="Password" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" text="User Id">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="userIDTextField" maxWidth="220.0" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="passwordField" maxWidth="220.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <ToolBar maxWidth="160.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #e0e9ec;">
+               <items>
+                  <Button maxWidth="74.0" mnemonicParsing="false" onAction="#loginButtonPushed" style="-fx-background-color: #4caf50;" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backButton" maxWidth="74.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="68.0" text="Back">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </items>
+            </ToolBar>
+            <Label fx:id="errMsgLabel" text="Label">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
